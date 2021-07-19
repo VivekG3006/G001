@@ -1,0 +1,36 @@
+temp1 = int(input("taking temperature from device 1 "))
+temp2 = int(input("taking temperature from device 2 "))
+temp3 = int(input("taking temperature from device 3 "))
+temp4 = int(input("taking temperature from device 4 "))
+temp5 = int(input("taking temperature from device 5 "))
+oxy1 = input("taking o2 levels from device 1 ")
+oxy2 = input("taking o2 from device 2 ")
+oxy3 = input("taking o2 from device 3 ")
+oxy4 = input("taking o2 from device 4 ")
+oxy5 = input("taking o2 from device 5 ")
+co1 = input("taking co from device 1 ")
+co2 = input("taking co from device 2 ")
+co3 = input("taking co from device 3 ")
+co4 = input("taking co from device 4 ")
+co5 = input("taking co from device 5 ")
+motion1 = input("taking motion count from device 1 ")
+motion2 = input("taking motion count from device 2 ")
+motion3 = input("taking motion count from device 3 ")
+motion4 = input("taking motion count from device 4 ")
+motion5 = input("taking motion count from device 5 ")
+t=[temp1,temp2,temp3,temp4,temp5]
+def maxmintemp(t, n):
+ 
+    # inbuilt function to find the position of minimum
+    minpos = t.index(min(t))
+     
+    # inbuilt function to find the position of maximum
+    maxpos = t.index(max(t))
+     
+    # printing the position
+    print ("The maximum temp is in Room", maxpos + 1)  
+    print ("The minimum temp is in Room", minpos + 1)
+     
+     
+# driver code
+maxmintemp(t, len(t))
